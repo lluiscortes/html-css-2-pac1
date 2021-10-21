@@ -4,7 +4,6 @@
 
 import '@fortawesome/fontawesome-free/js/all.js';
 import Typewriter from 'typewriter-effect/dist/core';
-import Headroom from 'headroom.js';
 import AOS from 'aos';
 
 
@@ -71,3 +70,4 @@ toggle.addEventListener('click', toggleMenu);
 for (var i = 0, len = navLinks.length; i < len; i++) {
   navLinks[i].addEventListener('click', closeMenu);
 }
+
