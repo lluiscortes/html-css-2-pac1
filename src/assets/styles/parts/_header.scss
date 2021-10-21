@@ -7,11 +7,17 @@
   top: 0;
   left: 0;
   background-color: $header-bg-color;
+  background: $grandient-default;
   width: 100%;
-  height: $header-height;
+  //height: $header-height;
   z-index: 999;
+  transition: $transition-base;
 
   &.headroom.headroom--top {
-    background-color: transparent;
+    //background: transparent;
   }
+
+  //&.headroom.headroom--unpinned {
+  //  transform: translateY(-$header-height);
+  //}
 }

@@ -10,17 +10,31 @@
 
 <body>
 
+<!-- Preloader : START -->
+<div id="preloader" class="preloader preloader--show">
+    <div class="preloader__spinner"></div>
+</div>
+<!-- Preloader : END -->
+
+<!-- Header : START -->
 <header class="header">
-    <nav class="navbar">
+    <div id="toggle" class="toggle">
+        <div class="toggle__bar"></div>
+        <div class="toggle__bar"></div>
+        <div class="toggle__bar"></div>
+    </div>
+    <nav id="navbar" class="navbar">
         <ul class="navbar__menu">
             <li class="navbar__item"><a class="navbar__link" href="#about">About</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Education</a></li>
             <li class="navbar__item"><a class="navbar__link" href="#skills">Skills</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="">Education</a></li>
             <li class="navbar__item"><a class="navbar__link" href="">Experience</a></li>
         </ul>
     </nav>
 </header>
+<!-- Header: END -->
 
+<!-- Hero : START -->
 <div class="hero">
     <div class="hero__avatar" data-aos="fade-down">
         <img src="./assets/images/avatar.jpg" alt="Lluís Cortès">
@@ -33,7 +47,9 @@
     </div>
     <i class="hero__arrow fas fa-chevron-down"></i>
 </div>
+<!-- Hero : END -->
 
+<!-- About : START -->
 <section id="about" class="section section--light anchor">
     <div class="container">
         <h2 class="section__heading">About</h2>
@@ -47,7 +63,9 @@
             vel, volutpat eget risus. Suspendisse orci ipsum, dignissim sit amet hendrerit nec, posuere at tellus.</p>
     </div>
 </section>
+<!-- About : END -->
 
+<!-- Skills : START -->
 <section id="skills" class="section anchor">
     <div class="container">
         <h2 class="section__heading">Skills</h2>
@@ -55,8 +73,8 @@
             <div class="grid__column grid__column--md-2">
                 <div id="skill-html" class="skill">
                     <div class="skill__header">
-                        <h4 class="skill__name">HTML</h4>
                         <span class="skill__rating">90%</span>
+                        <h4 class="skill__name">HTML</h4>
                     </div>
                     <div class="skill__bar">
                         <div class="skill__progress" data-aos="bar-fill"></div>
@@ -66,8 +84,8 @@
             <div class="grid__column grid__column--md-2">
                 <div id="skill-css" class="skill">
                     <div class="skill__header">
-                        <h4 class="skill__name">CSS</h4>
                         <span class="skill__rating">90%</span>
+                        <h4 class="skill__name">CSS</h4>
                     </div>
                     <div class="skill__bar">
                         <div class="skill__progress" data-aos="bar-fill"></div>
@@ -77,8 +95,8 @@
             <div class="grid__column grid__column--md-2">
                 <div id="skill-js" class="skill">
                     <div class="skill__header">
-                        <h4 class="skill__name">JavaScript</h4>
                         <span class="skill__rating">75%</span>
+                        <h4 class="skill__name">JavaScript</h4>
                     </div>
                     <div class="skill__bar">
                         <div class="skill__progress" data-aos="bar-fill"></div>
@@ -88,8 +106,8 @@
             <div class="grid__column grid__column--md-2">
                 <div id="skill-bs" class="skill">
                     <div class="skill__header">
-                        <h4 class="skill__name">Bootstrap</h4>
                         <span class="skill__rating">85%</span>
+                        <h4 class="skill__name">Bootstrap</h4>
                     </div>
                     <div class="skill__bar">
                         <div class="skill__progress" data-aos="bar-fill"></div>
@@ -99,8 +117,8 @@
             <div class="grid__column grid__column--md-2">
                 <div id="skill-php" class="skill">
                     <div class="skill__header">
-                        <h4 class="skill__name">PHP</h4>
                         <span class="skill__rating">75%</span>
+                        <h4 class="skill__name">PHP</h4>
                     </div>
                     <div class="skill__bar">
                         <div class="skill__progress" data-aos="bar-fill"></div>
@@ -110,8 +128,8 @@
             <div class="grid__column grid__column--md-2">
                 <div id="skill-ps" class="skill">
                     <div class="skill__header">
-                        <h4 class="skill__name">Photoshop</h4>
                         <span class="skill__rating">70%</span>
+                        <h4 class="skill__name">Photoshop</h4>
                     </div>
                     <div class="skill__bar">
                         <div class="skill__progress" data-aos="bar-fill"></div>
@@ -121,7 +139,21 @@
         </div>
     </div>
 </section>
+<!-- Skills : END -->
 
+<!-- Education : START -->
+<section id="education" class="section section--light">
+    <div class="container">
+        <h2 class="section__heading">Education</h2>
+        <div class="education">
+
+        </div>
+    </div>
+</section>
+<!-- Education : END -->
+
+
+<!-- Contact : START -->
 <section id="contact" class="section">
     <div class="container">
         <h2 class="section__heading">Contact me</h2>
@@ -152,10 +184,13 @@
         </form>
     </div>
 </section>
+<!-- Contact : END -->
 
+<!-- Footer : START -->
 <footer class="footer">
 
 </footer>
+<!-- Footer : END -->
 
 <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>

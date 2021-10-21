@@ -3,13 +3,12 @@
 
   .skill__header  {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: .5rem;
   }
 
   .skill__name, .skill__rating {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   .skill__name {
@@ -18,12 +17,15 @@
 
   .skill__rating {
     font-family: $headings-font-family;
+    margin-right: 1rem;
+    font-weight: $font-weight-bold;
+    color: $primary-color;
   }
 
   .skill__bar {
     position: relative;
     width: 100%;
-    height: 13px;
+    height: 10px;
     background-color: lighten($skill-color, 40%);
   }
 

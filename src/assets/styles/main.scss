@@ -22,24 +22,25 @@
 @import '../../../node_modules/aos/dist/aos.css';
 
 /**
- * Import BEM blocks
+ * Import parts
  */
 
-@import 'blocks/button';
-@import 'blocks/skill';
-@import 'blocks/navbar';
-@import 'blocks/section';
-@import 'blocks/grid';
-@import 'blocks/header';
-@import 'blocks/hero';
-@import 'blocks/form';
-@import 'blocks/footer';
+@import 'parts/button';
+@import 'parts/skill';
+@import 'parts/navbar';
+@import 'parts/section';
+@import 'parts/grid';
+@import 'parts/header';
+@import 'parts/hero';
+@import 'parts/form';
+@import 'parts/footer';
+@import 'parts/preloader';
+@import 'parts/toggle';
 
 /**
  * Import plugins custom scripts
  */
 
-@import 'plugins/headroom';
 @import 'plugins/aos';
 
 /**
