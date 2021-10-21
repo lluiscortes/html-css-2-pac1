@@ -36,18 +36,13 @@
 @import 'parts/footer';
 @import 'parts/preloader';
 @import 'parts/toggle';
+@import 'parts/animations';
 
 /**
  * Import plugins custom scripts
  */
 
 @import 'plugins/aos';
-
-/**
- * Import misc styles
- */
-
-@import 'misc/animations';
 
 /**
  * Do NOT include anything else in this file!

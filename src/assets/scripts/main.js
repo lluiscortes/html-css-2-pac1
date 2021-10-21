@@ -19,14 +19,6 @@ new Typewriter('.hero__subheading', {
   loop: true,
 });
 
-// Headroom
-const header = document.querySelector('.header');
-const headroom = new Headroom(header, {
-  offset: 300,
-  tolerance: 10
-});
-headroom.init();
-
 // AOS
 AOS.init({
   duration: 1200
@@ -59,15 +51,23 @@ function clickHandler(e) {
 // Header behavior
 const toggle = document.getElementById('toggle');
 const navbar = document.getElementById('navbar');
-const showMenu = () => {
+const navLinks = document.getElementsByClassName('navbar__link');
+const openMenu = () => {
+  navbar.classList.add('navbar--show');
+  toggle.classList.add('toggle--close');
+}
+const closeMenu = () => {
+  navbar.classList.remove('navbar--show');
+  toggle.classList.remove('toggle--close');
+}
+const toggleMenu = () => {
   if (navbar.classList.contains('navbar--show')) {
-    navbar.classList.remove('navbar--show')
-    toggle.classList.remove('toggle--close');
-
+    closeMenu();
   } else {
-    navbar.classList.add('navbar--show');
-    toggle.classList.add('toggle--close');
+    openMenu();
   }
 }
-toggle.addEventListener('click', showMenu);
-
+toggle.addEventListener('click', toggleMenu);
+for (var i = 0, len = navLinks.length; i < len; i++) {
+  navLinks[i].addEventListener('click', closeMenu);
+}

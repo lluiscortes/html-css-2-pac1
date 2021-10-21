@@ -66,17 +66,4 @@
       margin: .5rem;
     }
   }
-
-  // Arrow
-  .hero__arrow {
-    color: $white;
-    align-self: center;
-    margin: 1rem;
-    font-size: 3rem;
-    animation: bounce 1.5s ease-out;
-    animation-iteration-count: infinite;
-    text-shadow: 0 2px 10px rgba($black, 1);
-    position: absolute;
-    bottom: 0;
-  }
 }

@@ -35,6 +35,7 @@
     border-radius: $button-radius;
     display: block;
     text-align: center;
+    font-weight: $font-weight-bold;
 
     &:hover {
       background: rgba($white, .1);

@@ -10,6 +10,18 @@
   height: 60px;
   z-index: 9999999999;
   background: $secondary-color;
+  border-radius: $border-radius;
+  cursor: pointer;
+
+  @media only screen and (min-width: $md-breakpoint) {
+    top: 2rem;
+    right: 2rem;
+  }
+
+  @media only screen and (min-width: $xl-breakpoint) {
+    top: 3rem;
+    right: 3rem;
+  }
 
   .toggle__bar {
     height: 3px;
