@@ -1,0 +1,17 @@
+// Header globals
+.header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  background-color: $header-bg-color;
+  width: 100%;
+  height: $header-height;
+  z-index: 999;
+
+  &.headroom.headroom--top {
+    background-color: transparent;
+  }
+}

@@ -7,23 +7,46 @@
  * Import variables
  */
 
-@import "variables";
+@import 'variables';
+
+/**
+ * Import global styles
+ */
+
+@import 'global';
 
 /**
  * Import npm dependencies
- * see: https://v2.parceljs.org/features/module-resolution/
- * see commented examples below
  */
 
-// @import "some-node-module";
-// @import "@some-company/some-node-module";
+@import '../../../node_modules/aos/dist/aos.css';
 
 /**
- * Import layouts
- * It's a best practice to use a different partial for each page
+ * Import BEM blocks
  */
 
-@import "layouts/home";
+@import 'blocks/button';
+@import 'blocks/skill';
+@import 'blocks/navbar';
+@import 'blocks/section';
+@import 'blocks/grid';
+@import 'blocks/header';
+@import 'blocks/hero';
+@import 'blocks/form';
+@import 'blocks/footer';
+
+/**
+ * Import plugins custom scripts
+ */
+
+@import 'plugins/headroom';
+@import 'plugins/aos';
+
+/**
+ * Import misc styles
+ */
+
+@import 'misc/animations';
 
 /**
  * Do NOT include anything else in this file!

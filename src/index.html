@@ -1,23 +1,163 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html>
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
     <title>Lluís Cortès - Currículum Vitae</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <img src="./assets/images/logo.png" alt="Universitat Oberta de Catalunya" class="uoc-logo">
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+</head>
+
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <ul class="navbar__menu">
+            <li class="navbar__item"><a class="navbar__link" href="#about">About</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="">Education</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="#skills">Skills</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="">Experience</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero">
+    <div class="hero__avatar" data-aos="fade-down">
+        <img src="./assets/images/avatar.jpg" alt="Lluís Cortès">
     </div>
-    <script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <h1 class="hero__heading">Lluís Cortès</h1>
+    <h2 class="hero__subheading"></h2>
+    <div class="hero__buttons">
+        <a class="button button--secondary" data-aos="fade-right" href="#contact">Contact Me</a>
+        <a class="button button--secondary" data-aos="fade-left" href="">Download PDF</a>
+    </div>
+    <i class="hero__arrow fas fa-chevron-down"></i>
+</div>
+
+<section id="about" class="section section--light anchor">
+    <div class="container">
+        <h2 class="section__heading">About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet euismod tellus, eget vulputate
+            libero rhoncus imperdiet. Donec at rhoncus libero, non cursus enim. Duis euismod ex in nisl gravida, et
+            pellentesque erat tempor. Aliquam in diam eu massa vulputate posuere. Nullam gravida egestas libero, id
+            scelerisque nisl rutrum sit amet. Proin hendrerit pulvinar rhoncus. Praesent eu tellus nibh. Sed eu dui
+            vitae tellus tempus maximus. Nunc id iaculis odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Maecenas venenatis diam tellus, quis dictum ex molestie ac. Morbi nulla leo, rhoncus eu mi sed, congue
+            ultrices nunc. Sed eu laoreet felis, id pellentesque velit. Fusce ligula risus, rutrum sit amet semper
+            vel, volutpat eget risus. Suspendisse orci ipsum, dignissim sit amet hendrerit nec, posuere at tellus.</p>
+    </div>
+</section>
+
+<section id="skills" class="section anchor">
+    <div class="container">
+        <h2 class="section__heading">Skills</h2>
+        <div class="grid">
+            <div class="grid__column grid__column--md-2">
+                <div id="skill-html" class="skill">
+                    <div class="skill__header">
+                        <h4 class="skill__name">HTML</h4>
+                        <span class="skill__rating">90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-aos="bar-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__column grid__column--md-2">
+                <div id="skill-css" class="skill">
+                    <div class="skill__header">
+                        <h4 class="skill__name">CSS</h4>
+                        <span class="skill__rating">90%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-aos="bar-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__column grid__column--md-2">
+                <div id="skill-js" class="skill">
+                    <div class="skill__header">
+                        <h4 class="skill__name">JavaScript</h4>
+                        <span class="skill__rating">75%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-aos="bar-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__column grid__column--md-2">
+                <div id="skill-bs" class="skill">
+                    <div class="skill__header">
+                        <h4 class="skill__name">Bootstrap</h4>
+                        <span class="skill__rating">85%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-aos="bar-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__column grid__column--md-2">
+                <div id="skill-php" class="skill">
+                    <div class="skill__header">
+                        <h4 class="skill__name">PHP</h4>
+                        <span class="skill__rating">75%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-aos="bar-fill"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__column grid__column--md-2">
+                <div id="skill-ps" class="skill">
+                    <div class="skill__header">
+                        <h4 class="skill__name">Photoshop</h4>
+                        <span class="skill__rating">70%</span>
+                    </div>
+                    <div class="skill__bar">
+                        <div class="skill__progress" data-aos="bar-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <div class="container">
+        <h2 class="section__heading">Contact me</h2>
+        <form class="form">
+            <div class="form__grid">
+                <div class="form__column form__column--md-2">
+                    <div class="form__control">
+                        <label class="form__label" for="name">Name</label>
+                        <input class="form__input" id="name" name="name" type="text">
+                    </div>
+                </div>
+                <div class="form__column form__column--md-2">
+                    <div class="form__control">
+                        <label class="form__label" for="email">Email</label>
+                        <input class="form__input" id="email" name="email" type="text">
+                    </div>
+                </div>
+                <div class="form__column">
+                    <div class="form__control">
+                        <label class="form__label" for="message">Message</label>
+                        <textarea class="form__textarea" name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="form__column">
+                    <button class="button button--primary button--block">Send Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+
+</footer>
+
+<script src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

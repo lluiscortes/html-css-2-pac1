@@ -1,0 +1,43 @@
+.form {
+
+  .form__control {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__label {
+    margin-bottom: .5rem;
+    font-family: $headings-font-family;
+    font-weight: $font-weight-bold;
+  }
+
+  .form__input, .form__textarea {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    background-color: $input-bg;
+    border-width: $input-border-width;
+    border-color: $input-border-color;
+    border-radius: $input-border-radius;
+  }
+
+  .form__input {
+    height: 50px;
+    padding: 5px 20px;
+  }
+
+  .form__textarea {
+    padding: 20px;
+  }
+
+  // Form grid
+  .form__grid {
+    @extend .grid;
+  }
+  .form__column {
+    @extend .grid__column;
+    margin-bottom: 1.5rem;
+  }
+  .form__grid .form__column--md-2 {
+    @extend .grid__column--md-2;
+  }
+}

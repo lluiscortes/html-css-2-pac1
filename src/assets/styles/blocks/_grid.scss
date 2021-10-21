@@ -1,0 +1,23 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  .grid__column {
+    padding: 0 $gutter;
+    width: 100%;
+  }
+}
+
+// Container gutter fix
+.container .grid {
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+}
+
+// Media queries
+@media only screen and (min-width: $md-breakpoint) {
+
+  .grid .grid__column--md-2 {
+    width: 50%;
+  }
+}

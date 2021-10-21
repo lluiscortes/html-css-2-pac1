@@ -1,0 +1,46 @@
+.skill {
+  margin-bottom: 2rem;
+
+  .skill__header  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+  }
+
+  .skill__name, .skill__rating {
+    font-size: 1rem;
+  }
+
+  .skill__name {
+    margin: 0;
+  }
+
+  .skill__rating {
+    font-family: $headings-font-family;
+  }
+
+  .skill__bar {
+    position: relative;
+    width: 100%;
+    height: 13px;
+    background-color: lighten($skill-color, 40%);
+  }
+
+  .skill__progress {
+    position: absolute;
+    background-color: $skill-color;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+
+}
+
+// Skills Length
+#skill-html .skill__progress  { max-width: 90%; }
+#skill-css .skill__progress   { max-width: 90%; }
+#skill-js .skill__progress    { max-width: 75%; }
+#skill-bs .skill__progress    { max-width: 85%; }
+#skill-php .skill__progress   { max-width: 75%; }
+#skill-ps .skill__progress    { max-width: 70%; }

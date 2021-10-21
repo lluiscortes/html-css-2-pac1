@@ -1,0 +1,12 @@
+.section {
+  padding: $wrapper 0;
+
+  .section__heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  // Section Light
+  &--light {
+    background-color: $light;
+  }
+}
