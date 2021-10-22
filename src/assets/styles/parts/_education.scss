@@ -37,10 +37,14 @@
     color: $gray;
     font-weight: $font-weight-base;
     margin-bottom: 1.25rem;
+
+    &--desktop {
+      display: none;
+    }
   }
 
   .education__description {
-    padding: 0 0 0 1rem;
+    padding: 0 0 0 1.25rem;
     margin: 0;
   }
 
@@ -53,6 +57,10 @@
     text-align: right;
     border-right: 4px solid $primary-color;
     padding-right: 70px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     .education__degree {
       padding: 0;
@@ -64,8 +72,8 @@
 
     .education__date {
       position: absolute;
-      right: -108px;
-      top: calc(50% - 30px);
+      right: -112px;
+      top: calc(50% - 31px);
       transform: rotate(90deg);
       margin: 0;
       padding: 1rem 2rem;
@@ -73,6 +81,17 @@
       border-radius: $border-radius;
       color: $white;
       font-size: $font-size-base;
+      width: 220px;
+      height: 62px;
+      text-align: center;
+
+      &--desktop {
+        display: block;
+      }
+
+      &--mobile {
+        display: none;
+      }
     }
 
     .education__description {
@@ -95,7 +114,7 @@
         transform: rotate(-90deg);
         background-color: $secondary-color;
         color: $body-color;
-        left: -90px;
+        left: -112px;
         right: auto;
       }
     }

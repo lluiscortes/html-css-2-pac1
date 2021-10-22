@@ -1,4 +1,11 @@
 .footer {
   padding: $wrapper 0;
   background: $grandient-default;
+
+  .footer__credits {
+    text-align: center;
+    color: $white;
+    font-size: $font-size-base;
+    margin: 0;
+  }
 }
