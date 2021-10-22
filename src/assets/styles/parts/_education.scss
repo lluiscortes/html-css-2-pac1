@@ -1,7 +1,8 @@
 .education {
+  margin-bottom: 2rem;
 
-  &:not(:last-child) {
-    margin-bottom: 2rem;
+  &:last-child {
+    margin-bottom: 0;
   }
 
   .education__degree {
@@ -32,7 +33,7 @@
   }
 
   .education__date {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: $gray;
     font-weight: $font-weight-base;
     margin-bottom: 1.25rem;
@@ -41,5 +42,66 @@
   .education__description {
     padding: 0 0 0 1rem;
     margin: 0;
+  }
+
+  @media only screen and (min-width: $md-breakpoint) {
+    width: calc(50% + 2px);
+    margin-bottom: 0;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: right;
+    border-right: 4px solid $primary-color;
+    padding-right: 70px;
+
+    .education__degree {
+      padding: 0;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    .education__school {
+
+    }
+
+    .education__date {
+      position: absolute;
+      right: -108px;
+      top: calc(50% - 30px);
+      transform: rotate(90deg);
+      margin: 0;
+      padding: 1rem 2rem;
+      background: $primary-color;
+      border-radius: $border-radius;
+      color: $white;
+      font-size: $font-size-base;
+    }
+
+    .education__description {
+      padding: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-left: auto;
+      border-left: 4px solid $secondary-color;
+      border-right: 0;
+      padding-left: 70px;
+      padding-right: 0;
+      text-align: left;
+
+      .education__school {
+        color: $secondary-color;
+      }
+
+      .education__date {
+        transform: rotate(-90deg);
+        background-color: $secondary-color;
+        color: $body-color;
+        left: -90px;
+        right: auto;
+      }
+    }
   }
 }
