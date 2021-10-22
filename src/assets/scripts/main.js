@@ -71,3 +71,19 @@ for (var i = 0, len = navLinks.length; i < len; i++) {
   navLinks[i].addEventListener('click', closeMenu);
 }
 
+// To Top Button
+const toTopBtn = document.getElementById('totop');
+window.onscroll = function() {
+  scrollFunction()
+};
+function scrollFunction() {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    toTopBtn.classList.add('totop--show');
+  } else {
+    toTopBtn.classList.remove('totop--show');
+  }
+}
+toTopBtn.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});

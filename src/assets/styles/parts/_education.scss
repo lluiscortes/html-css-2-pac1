@@ -56,7 +56,7 @@
     padding-bottom: 60px;
     text-align: right;
     border-right: 4px solid $primary-color;
-    padding-right: 70px;
+    padding-right: 40px;
     min-height: 350px;
     display: flex;
     flex-direction: column;
@@ -72,16 +72,16 @@
 
     .education__date {
       position: absolute;
-      right: -112px;
+      right: -126px;
       top: calc(50% - 31px);
       transform: rotate(90deg);
       margin: 0;
       padding: 1rem 2rem;
       background: $primary-color;
-      border-radius: $border-radius;
+      border-radius: $border-radius $border-radius 0 0;
       color: $white;
-      font-size: $font-size-base;
-      width: 220px;
+      font-size: 1rem;
+      width: 182px;
       height: 62px;
       text-align: center;
 
@@ -102,7 +102,7 @@
       margin-left: auto;
       border-left: 4px solid $secondary-color;
       border-right: 0;
-      padding-left: 70px;
+      padding-left: 40px;
       padding-right: 0;
       text-align: left;
 
@@ -114,7 +114,7 @@
         transform: rotate(-90deg);
         background-color: $secondary-color;
         color: $body-color;
-        left: -112px;
+        left: -126px;
         right: auto;
       }
     }
